@@ -1,0 +1,16 @@
+from math import sqrt
+print("Write 0 in the place of number you are searching for.")
+E = int(input("kinetichna_energiq "))
+V = int(input("Skorost "))
+m = int(input("masa "))
+# E ken = V^2.m/2
+if E == 0:
+    E_ken = V ** 2 * m / 2
+    print(f"E = {E_ken}")
+elif m == 0:
+    masa = 2 * E / V ** 2
+    print(f"m = {masa}")
+elif V == 0:
+   v_na_2 = 2 * E / m
+   Ve = sqrt(v_na_2)
+   print(f"V = {Ve}")
