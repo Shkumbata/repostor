@@ -1,0 +1,90 @@
+print('METRIC CONVERTER')
+print('cm, m, km, dm, mm')
+chislo = float(input('number: '))
+merna_edinica = input('insert the current measuring unit: ')
+v_kakvo_se_preobrazuva = input('declare the wanted measuring unit: ')
+m = 0
+cm = 0
+mm = 0
+dm = 0
+km = 0
+if merna_edinica == 'cm' and v_kakvo_se_preobrazuva == 'm':
+    cm = chislo
+    m = cm / 100
+    print(f'{m:.3f}')
+elif merna_edinica == 'm' and v_kakvo_se_preobrazuva == 'cm':
+    m = chislo
+    cm = m * 100
+    print(f'{cm:.3f}')
+elif merna_edinica == 'mm' and v_kakvo_se_preobrazuva == 'm':
+    mm = chislo
+    m = mm / 1000
+    print(f'{m:.3f}')
+elif merna_edinica == 'm' and v_kakvo_se_preobrazuva =='mm':
+    m = chislo
+    mm = m * 1000
+    print(f'{mm:.3f}')
+elif merna_edinica == 'cm' and v_kakvo_se_preobrazuva =='mm':
+    cm = chislo
+    mm = cm * 10
+    print(f'{mm:.3f}')
+elif merna_edinica == 'mm' and v_kakvo_se_preobrazuva == 'cm':
+    mm = chislo
+    cm = mm / 10
+    print(f'{cm:.3f}')
+elif merna_edinica == 'dm' and v_kakvo_se_preobrazuva == 'cm':
+    dm = chislo
+    cm = dm / 10
+    print(f'{cm:.3f}')
+elif merna_edinica == 'cm' and v_kakvo_se_preobrazuva == 'dm':
+    cm = chislo
+    dm = cm * 10
+    print(f'{dm:.3f}')
+elif merna_edinica == 'mm' and v_kakvo_se_preobrazuva == 'dm':
+    mm = chislo
+    dm = mm / 100
+    print(f'{dm:.3f}')
+elif merna_edinica == 'dm' and v_kakvo_se_preobrazuva == 'mm':
+    dm = chislo
+    mm = dm * 100
+    print(f'{mm:.3f}')
+elif merna_edinica == 'm' and v_kakvo_se_preobrazuva == 'dm':
+    m = chislo
+    dm = m * 10
+    print(f'{dm:.3f}')
+elif merna_edinica == 'dm' and v_kakvo_se_preobrazuva == 'm':
+    dm = chislo
+    m = dm / 10
+    print(f'{m:.3f}')
+elif merna_edinica == 'dm' and v_kakvo_se_preobrazuva == 'km':
+    dm = chislo
+    km = dm / 10000
+    print(f'{km:.4f}')
+elif merna_edinica == 'km' and v_kakvo_se_preobrazuva == 'dm':
+    km = chislo
+    dm = km * 10000
+    print(f'{dm:.3f}')
+elif merna_edinica == 'km' and v_kakvo_se_preobrazuva == 'm':
+    km = chislo
+    m = km * 1000
+    print(f'{m:.3f}')
+elif merna_edinica == 'm' and v_kakvo_se_preobrazuva == 'km':
+    m = chislo
+    km = m / 1000
+    print(f'{km:.3f}')
+elif merna_edinica == 'cm' and v_kakvo_se_preobrazuva == 'km':
+    cm = chislo
+    km = cm / 100000
+    print(f'{cm:.6f}')
+elif merna_edinica == 'km' and v_kakvo_se_preobrazuva == 'cm':
+    km = chislo
+    cm = km * 100000
+    print(f'{cm:.3f}')
+elif merna_edinica == 'mm' and v_kakvo_se_preobrazuva == 'km':
+    mm = chislo
+    km = mm / 1000000
+    print(f'{km:.7f}')
+elif merna_edinica == 'km' and v_kakvo_se_preobrazuva == 'mm':
+    km = chislo
+    mm = km * 1000000
+    print(f'{mm:.3f}')
